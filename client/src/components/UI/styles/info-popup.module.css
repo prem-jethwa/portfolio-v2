@@ -1,0 +1,190 @@
+.popup-con {
+  transform: all 400ms ease;
+  cursor: pointer;
+  /* z-index: 20; */
+  position: static;
+  width: 100%;
+  /* width: 100px;
+  height: 100px; */
+}
+.popup {
+  /* position: absolute; */
+  z-index: 20;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.pop {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-color: aliceblue;
+  /* opacity: 0;
+  display: none; */
+  transform: all 400ms ease;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.76);
+  z-index: 100;
+}
+
+.up {
+  bottom: 100%;
+  right: 20%;
+}
+
+.right {
+  left: 100%;
+  top: 0;
+}
+
+.left {
+  right: 100%;
+  margin-top: -5%;
+  margin-left: -160px;
+}
+.bottom {
+  margin-top: -30px;
+}
+
+.no {
+  display: none;
+  opacity: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid aliceblue;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  bottom: -10px;
+  right: 10px;
+}
+.arrow-right {
+  transform: rotate(270deg);
+  left: -20px;
+  top: 20px;
+}
+
+.arrow-left {
+  transform: rotate(90deg);
+  top: 40%;
+  right: -20px;
+}
+
+.arrow-bottom {
+  transform: rotate(0deg);
+  top: -10px;
+  left: 15px;
+}
+
+.arrow-no {
+  display: none;
+  opacity: 0;
+}
+
+/* .popup-con:hover .pop {
+  opacity: 1;
+  display: block;
+} */
+
+/* .popup-con {
+  transform: all 400ms ease;
+  cursor: pointer;
+
+  position: static;
+
+  width: 100px;
+  height: 100px;
+}
+.popup {
+
+  z-index: 20;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.pop {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-color: aliceblue;
+  transform: all 400ms ease;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.76);
+  z-index: 100;
+}
+
+.up {
+  bottom: 100%;
+  right: 20%;
+}
+
+.right {
+  left: 100%;
+  top: 0;
+}
+
+.left {
+  right: 100%;
+}
+.bottom {
+  top: 100%;
+  left: 10px;
+}
+
+.no {
+  display: none;
+  opacity: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid aliceblue;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  bottom: -10px;
+  right: 10px;
+}
+.arrow-right {
+  transform: rotate(270deg);
+  left: -20px;
+  top: 20px;
+}
+
+.arrow-left {
+  transform: rotate(90deg);
+  top: 40%;
+  right: -20px;
+}
+
+.arrow-bottom {
+  transform: rotate(0deg);
+  top: -10px;
+  left: 15px;
+}
+
+.arrow-no {
+  display: none;
+  opacity: 0;
+}
+
+.popup-con:hover .pop {
+  opacity: 1;
+  display: block;
+} */

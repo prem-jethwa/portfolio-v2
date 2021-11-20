@@ -1,0 +1,57 @@
+@import "./global-var";
+
+@mixin rmDefault {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin conStyle {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin on-circle(
+  $item-count,
+  $circle-width,
+  $def-angle,
+  $circle-height,
+  $item-size,
+  $deg
+) {
+  // position: relative;
+  // width: $circle-width;
+  // height: $circle-height;
+  // padding: 0;
+  // border-radius: 50%;
+  // list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    z-index: -10;
+
+    $angle: ($def-angle / $item-count);
+    $rot: $deg;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-width / 2)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}

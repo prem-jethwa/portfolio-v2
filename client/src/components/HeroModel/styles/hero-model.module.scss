@@ -1,0 +1,147 @@
+@import "../../../styles/global";
+
+.hero-con {
+  // background-color: aliceblue;
+  position: relative;
+  top: 0;
+}
+
+.hero-img {
+  position: absolute;
+  width: 320px;
+  // margin: 1em 1em -0.3em auto;
+  z-index: 2;
+  // left: auto;
+  right: 50px;
+  // top: 0;
+  bottom: 0;
+  transition: all 1s ease;
+}
+
+.hero {
+  @include conStyle;
+  // padding: 3em 1em 1em 1em;
+  background-color: #0028ad38;
+  color: rgb(202, 202, 78); //$sec-bg;
+  font-size: 3em;
+  line-height: 1.5em;
+  min-height: 700px;
+  position: relative;
+  font-weight: 100;
+  // transition: all 3s ease;
+  .title {
+    padding: 2.8em 0.5em 0.5em 1.5em;
+    max-width: 550px;
+    transition: all 1s ease;
+
+    span {
+      color: $pri-bg;
+      font-size: 1.2em;
+    }
+    p {
+      color: $pri-font-color;
+      margin: 1.5em 1em 1em 0;
+      font-size: 20px;
+      line-height: 1.3em;
+      font-weight: 350;
+    }
+    .ct-btn {
+      width: 10%;
+    }
+    button {
+      @include rmDefault;
+      min-width: 170px;
+      margin-top: 1em;
+      padding: 0.2em;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(160, 123, 78, 0.356);
+      border-radius: 10px;
+      color: white; //$pri-bg;
+      cursor: pointer;
+      box-shadow: 0 0 3px black;
+      img {
+        width: 20px;
+        transform: rotate(180deg);
+        margin: 0.5em;
+      }
+      &:hover {
+        box-shadow: 0 0 10px black;
+      }
+    }
+  }
+
+  .circle-1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: $circle-tools-width;
+    height: $circle-tools-height;
+
+    max-width: $circle-tools-width-max;
+    min-width: $circle-tools-width-min;
+    // max-height: $circle-tools-height-max;
+    // min-height: $circle-tools-height-min;
+
+    clip-path: circle(60% at 70% 100%);
+    background-color: $main-bg2;
+  }
+}
+
+.circle-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  //instead of multiplying(*) we "+ 200 or etc"
+  width: $circle-tools-width * 2;
+  height: $circle-tools-height * 2;
+
+  max-width: $circle-tools-width-max * 2;
+  min-width: $circle-tools-width-min * 2;
+
+  clip-path: circle(44.46% at 83.24% 99.74%);
+  background-color: #a6ac5328;
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    .title {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-img {
+    width: 250px;
+    transition: all 3s ease;
+    right: 10px;
+  }
+
+  .hero {
+    font-size: 2em;
+    min-height: 900px;
+
+    .title {
+      padding: 2.5em 0.5em 0.5em 0.5em;
+      max-width: 600px;
+      min-height: 100%;
+      transform: translateY(50px);
+      p {
+        margin: 1em 1em 1em 0;
+      }
+      transition: all 2s ease;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    .circle-1 {
+      min-width: 270px;
+    }
+  }
+}

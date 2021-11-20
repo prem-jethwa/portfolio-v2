@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.192);
+  position: fixed;
+  z-index: 20;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.header-con {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header-con .logo {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  padding: 1em;
+}
+
+.header-con .nav {
+  display: none;
+  cursor: pointer;
+  color: #535213;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #ebf5b3;
+  position: absolute;
+  right: 0;
+  top: 70px;
+}
+
+.header-con .nav a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.header-con .nav .list {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: black;
+  padding: 1em 1.5em;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.671);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.671);
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.671);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.671);
+}
+
+.header-con .nav .list:hover {
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+.header-con .nav:hover {
+  display: block;
+}
+
+.header-con .nav:focus-within {
+  display: block;
+}
+
+.header-con button {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.header-con button:focus-within + .nav {
+  display: block;
+}
+
+.header-con .menu {
+  width: 60px;
+  height: 40px;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.header-con .menu:hover {
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+@media (max-width: 550px) {
+  .header-con .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .header-con .menu {
+    width: 50px;
+    height: 30px;
+  }
+  .header-con .nav {
+    top: 60px;
+    font-size: 1.2rem;
+  }
+  .header-con .nav .list {
+    padding: 1em 1.5em;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

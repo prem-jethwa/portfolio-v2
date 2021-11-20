@@ -1,0 +1,61 @@
+@import "../../../styles/global";
+
+.footer-con {
+  min-height: 200px;
+  background-color: yellow; // $pri-bg;
+}
+
+.footer {
+  @include conStyle;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    img {
+      height: 200px;
+      opacity: 0.8;
+    }
+  }
+
+  .social {
+    margin: 0.5em auto;
+    opacity: 1;
+    justify-self: center;
+    text-align: right;
+
+    width: 80%;
+    .icons {
+      margin-right: 1em;
+      img {
+        width: 40px;
+        height: 40px;
+        padding: 0.5em;
+        margin: 0.2em;
+        cursor: pointer;
+        &:hover {
+          background-color: $white-bg;
+        }
+        border-radius: 10px;
+      }
+    }
+    h3 {
+      margin: 1.5em 1.5em 0.5em auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    font-size: 14px;
+    .social {
+      .icons {
+        margin-right: 1em;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

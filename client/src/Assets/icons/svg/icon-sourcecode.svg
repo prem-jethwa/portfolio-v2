@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="223.24" height="168.804" viewBox="0 0 223.24 168.804">
+  <g id="icon-sourcecode" transform="translate(-64.014 -74.045)">
+    <g id="Group_7" data-name="Group 7" transform="translate(73.3 115.37)">
+      <line id="Line_14" data-name="Line 14" y1="6.853" x2="67.774" transform="translate(7.18 38.232) rotate(45)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15"/>
+      <line id="Line_16" data-name="Line 16" y1="6.853" x2="67.774" transform="translate(7.18 38.232) rotate(45)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15"/>
+      <line id="Line_15" data-name="Line 15" x2="67.774" y2="6.853" transform="translate(55.103 0) rotate(135)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15" opacity="0.9"/>
+      <line id="Line_17" data-name="Line 17" x2="67.774" y2="6.853" transform="translate(55.103 0) rotate(135)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15" opacity="0.9"/>
+    </g>
+    <g id="Group_6" data-name="Group 6" transform="translate(220.531 115.37)">
+      <line id="Line_18" data-name="Line 18" x2="67.774" y2="6.853" transform="translate(55.103 43.078) rotate(135)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15"/>
+      <line id="Line_19" data-name="Line 19" y1="6.853" x2="67.774" transform="translate(7.18 -4.846) rotate(45)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15" opacity="0.9"/>
+    </g>
+    <line id="Line_20" data-name="Line 20" y1="150" x2="47.088" transform="translate(152.09 83.447)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="15"/>
+  </g>
+</svg>

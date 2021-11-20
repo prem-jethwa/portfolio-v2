@@ -1,0 +1,210 @@
+@import "../../../styles/global";
+
+@media (max-width: 1200px) {
+  .skills-desc {
+    .desc {
+      margin-left: 1em;
+    }
+    .skills {
+      .tools-circle2 {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills-desc {
+    .desc {
+      width: 350px;
+    }
+    .skills {
+      .tools-circle2 {
+        opacity: 0;
+      }
+
+      .circle-con {
+        position: absolute;
+        width: 100%;
+        max-width: 550px;
+        height: 400px;
+      }
+      .circles {
+        @include on-circle(
+          $item-count: 13,
+          $circle-width: 550px,
+          $circle-height: 600px,
+          $item-size: 80px,
+          $deg: 15,
+          $def-angle: 360
+        );
+
+        // inset: 90px 210px auto auto;
+        inset: 80px auto auto 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .skills-con {
+    min-height: 750px;
+  }
+  .skills-desc {
+    flex-direction: column;
+    .desc {
+      width: 90%;
+      margin-top: 2.5em;
+      order: 2;
+    }
+    .skills {
+      .tools-heading {
+        max-width: 120px;
+      }
+      order: 1;
+
+      .circle-con {
+        max-width: 100%;
+        // background-color: aqua;
+      }
+      .circles {
+        @include on-circle(
+          $item-count: 13,
+          $circle-width: 500px,
+          $circle-height: 400px,
+          $item-size: 80px,
+          $deg: 15,
+          $def-angle: 360
+        );
+
+        inset: 80px 160px auto auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .skills-desc {
+    .skills {
+      .circles {
+        @include on-circle(
+          $item-count: 13,
+          $circle-width: 450px,
+          $circle-height: 450px,
+          $item-size: 80px,
+          $deg: 25,
+          $def-angle: 360
+        );
+
+        inset: 60px 140px auto auto;
+        .circle {
+          font-weight: 700;
+          font-size: 14px;
+          width: 85px;
+          height: 85px;
+        }
+      }
+    }
+  }
+  .prev-btn {
+    img {
+      left: 20px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .skills-desc {
+    .skills {
+      .tools-heading {
+        margin: 0.5em 0.5em 0 auto;
+      }
+      .tools-circle {
+        min-width: 270px;
+      }
+      .circles {
+        @include on-circle(
+          $item-count: 13,
+          $circle-width: 370px,
+          $circle-height: 370px,
+          $item-size: 80px,
+          $deg: 20,
+          $def-angle: 360
+        );
+
+        inset: 70px 110px auto auto;
+
+        .circle {
+          font-size: 12px;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 400px) {
+//   .skills-desc {
+//     .skills {
+//       .circles {
+//         position: relative;
+//         @include on-circle(
+//           $item-count: 0,
+//           $circle-width: 400px,
+//           $circle-height: 390px,
+//           $item-size: 0,
+//           $deg: 0,
+//           $def-angle: 0
+//         );
+//         .circle {
+//           position: relative;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 400px) {
+//   .skills-desc {
+//     .skills {
+//       .circles {
+//         .circle {
+//           left: 45%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 700px) {
+//   $circle-tools-height: 200px;
+//   $circle-tools-width: 400px;
+
+//   .skills-desc {
+//     .skills {
+//       .tools-circle {
+//         width: $circle-tools-width;
+//         height: $circle-tools-height;
+//       }
+//       .circle-1 {
+//         right: 400px - 50px;
+//       }
+
+//       .circle-2 {
+//         right: 360px - 50px;
+//         top: 105px;
+//       }
+//       .circle-3 {
+//         right: 280px - 50px;
+//         top: 190px;
+//       }
+//       .circle-4 {
+//         right: 170px - 50px;
+//         top: 240px;
+//       }
+//       .circle-5 {
+//         right: 50px - 50px;
+//         top: 250px;
+//       }
+//     }
+//   }
+// }

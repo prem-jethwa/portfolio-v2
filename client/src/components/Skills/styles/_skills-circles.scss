@@ -1,0 +1,136 @@
+@import "../../../styles/global";
+
+.skills {
+  width: 100%;
+  order: 2;
+  .tools-heading {
+    color: $main-bg;
+    max-width: 200px;
+    width: 100%;
+    font-size: 3.5rem;
+    position: absolute;
+    right: 0;
+
+    // padding: 0.8em 1.5em;
+    z-index: 4;
+    margin: 1em 1em 0 auto;
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 100%;
+      font-size: 18px;
+      margin: -0.5em 1em 0 0.5em;
+      color: rgb(106, 106, 255);
+    }
+  }
+  .tools-circle {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: $circle-tools-width;
+    height: $circle-tools-height;
+
+    max-width: $circle-tools-width-max;
+    min-width: $circle-tools-width-min;
+
+    background-color: $pri-bg;
+    clip-path: circle(60% at 70% 0%);
+    z-index: 3;
+  }
+  .tools-circle2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: $circle-tools-width * 2;
+    height: $circle-tools-height * 2;
+
+    max-width: $circle-tools-width-max * 2;
+    min-width: $circle-tools-width-min * 2;
+
+    background-color: rgba(143, 143, 143, 0.123);
+    clip-path: circle(45.58% at 83.99% 1.53%);
+    z-index: -1;
+  }
+
+  // .circle-con {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 450px;
+  //   background-color: rgba(255, 255, 255, 0.733);
+  //   margin: 0 0 auto auto;
+  //   // overflow: hidden;
+  // }
+
+  .before-circle_animation {
+    position: absolute;
+    @include on-circle(
+      $item-count: 5,
+      $circle-width: 100px,
+      $circle-height: 400px,
+      $item-size: 80px,
+      $deg: -70,
+      $def-angle: 0
+    );
+
+    opacity: 0;
+    inset: 80px auto auto 400px;
+
+    .circle {
+      position: absolute;
+      color: $main-bg;
+      background-color: $project-bg;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s ease-out;
+      z-index: -1;
+    }
+  }
+
+  .circle-con {
+    position: absolute;
+    max-width: 650px;
+    width: 100%;
+    height: 470px;
+    // height: 100%;
+    // background-color: rgba(255, 255, 255, 0.733);
+    margin: 0 0 auto auto;
+    overflow: hidden;
+    right: 0;
+  }
+  .circles {
+    position: absolute;
+    @include on-circle(
+      $item-count: 13,
+      $circle-width: 620px,
+      $circle-height: 600px,
+      $item-size: 80px,
+      $deg: 15,
+      $def-angle: 360
+    );
+    inset: 80px auto auto 430px;
+
+    z-index: 1;
+
+    .circle {
+      position: absolute;
+      color: $main-bg;
+      background-color: $sec-bg;
+      font-weight: 700;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s ease-out;
+      flex-direction: column;
+      z-index: 2;
+    }
+  }
+}

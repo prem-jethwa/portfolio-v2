@@ -1,0 +1,32 @@
+$main-bg: rgb(83, 82, 19);
+$pri-bg: yellow; //rgb(238, 255, 0);
+$sec-bg: rgb(221, 230, 109);
+$glass-bg: rgba(0, 0, 0, 0.192);
+$white-bg: rgb(254, 255, 245);
+
+$circle-tools-height: 360px;
+$circle-tools-width: 50%;
+
+$circle-tools-height-max: 260px;
+$circle-tools-width-max: 600px;
+
+$circle-tools-height-min: 180px;
+$circle-tools-width-min: 350px;
+
+// new colors
+$main-bg2: rgb(59, 53, 20);
+$pri-bg2: rgb(239, 255, 0);
+$sec-bg2: rgb(125, 123, 17);
+$third-bg: #64c9cf; // #3d087b;
+$project-bg: #bfcc03;
+$font-color: #f7ff84;
+$pri-font-color: #e9e9e9;
+$greadent: linear-gradient(
+  128deg,
+  rgba(34, 192, 195, 0.726) 0%,
+  rgba(253, 187, 45, 0.712) 130%
+);
+// @media (max-width: 700px) {
+//   $circle-tools-height: 200px;
+//   $circle-tools-width: 400px;
+// }

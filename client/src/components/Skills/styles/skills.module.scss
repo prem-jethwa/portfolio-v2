@@ -1,0 +1,108 @@
+@import "../../../styles/global";
+
+.skills-con {
+  // background: $glass-bg;
+  width: 100%;
+  min-height: 500px;
+}
+
+.skills-desc {
+  @include conStyle;
+  display: flex;
+  color: $sec-bg;
+  min-height: 350px;
+  position: relative;
+  padding-bottom: 1em;
+
+  @import "./skills-circles";
+
+  .skills {
+    max-width: 650px;
+    width: 100%;
+    height: $circle-tools-height;
+    // z-index: -5;
+  }
+
+  .desc {
+    // margin: 6em 1em 1em 1em;
+    max-width: 550px;
+    max-height: 400px;
+    width: 85%;
+    margin: 2em 1em 1em 0.2em;
+    font-size: 1.5rem;
+    text-align: bottom;
+    order: 0;
+    opacity: 1;
+    transition: all 600ms ease-out;
+    font-weight: 350;
+  }
+}
+
+.status {
+  margin: 1em 0.5em 0.5em 0;
+
+  span {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 1em auto;
+    color: $pri-bg;
+  }
+  font-weight: 350;
+  color: $pri-font-color;
+}
+
+.next-btn,
+.prev-btn {
+  @include rmDefault;
+  background-color: $glass-bg;
+  position: absolute;
+  z-index: 2;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.next-btn {
+  bottom: 20px;
+  right: 0;
+  height: 60%;
+  width: 70px;
+  img {
+    position: absolute;
+    transform: rotate(180deg);
+    right: 1em;
+    bottom: 50px;
+  }
+}
+
+.prev-btn {
+  // max-width: 200px;
+  top: 0;
+  height: 70px;
+  width: 70%;
+  // margin-left: 2em;
+
+  img {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 50px;
+    top: 1em;
+  }
+}
+
+@import "./media-query";
+
+// @media (max-width: 750px) {
+//   .skills-desc {
+//     flex-direction: column;
+//     .desc {
+//       margin-top: 2.5em;
+//       order: 2;
+//     }
+//     .skills {
+//       order: 1;
+//     }
+//   }
+// }

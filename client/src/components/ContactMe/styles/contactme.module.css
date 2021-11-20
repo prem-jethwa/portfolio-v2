@@ -1,0 +1,133 @@
+.contactme-con {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fefff5;
+  position: relative;
+}
+
+.main button {
+  font-size: 1.5rem;
+  padding: 0.2em 1em;
+  margin: 0 0.5em 0.5em 1em;
+  border: yellow 3px solid;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+}
+
+.main button:hover {
+  background-color: yellow;
+}
+
+.main form {
+  margin-bottom: 1.5em;
+}
+
+.contactme {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.name-email,
+.msg {
+  width: 50%;
+}
+
+.field {
+  font-size: 1.3rem;
+  margin: 1em;
+}
+
+.field input,
+.field textarea {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(251, 255, 219, 0.719);
+  width: 90%;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.field textarea {
+  width: 100%;
+  max-width: 90%;
+  min-width: 90%;
+  max-height: 120px;
+  min-height: 120px;
+}
+
+.or {
+  margin: 0.2em;
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.option {
+  margin: 0 1em 1em 2em;
+}
+
+.option span {
+  color: #fefff5;
+}
+
+.option a {
+  color: #dde66d;
+}
+
+.thanks {
+  opacity: 0.3;
+  color: #fefff5;
+  font-size: 2.5em;
+  margin: 0.5em 0.5em -0.25em 0;
+}
+
+.notify-msg {
+  top: -40px;
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 0.2em;
+  margin: 1em;
+  background-color: #ffb6b6;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+@media (max-width: 650px) {
+  .contactme {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main {
+    margin: 4.5em auto 0 auto;
+  }
+  .name-email,
+  .msg {
+    width: 100%;
+  }
+  .thanks {
+    font-size: 1.5em;
+  }
+  .notify-msg {
+    top: -60px;
+  }
+}
+/*# sourceMappingURL=contactme.module.css.map */

@@ -1,0 +1,88 @@
+@keyframes fade-in {
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.go-out {
+  display: flex;
+  /* position: absolute; */
+  opacity: 0;
+  height: 250px;
+}
+
+.slideup-hero_title {
+  padding: 2.8em 0.5em 0.5em 1.5em;
+  transform: translateY(100px);
+
+  opacity: 0;
+}
+.slideup-hero_img {
+  transform: translateY(100px);
+
+  /* opacity: 0; */
+}
+
+.slideup {
+  /* position: absolute; */
+  /* width: 10px;
+  height: 50px; */
+  max-width: 400px;
+  height: 250px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.slideup img {
+  position: absolute;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto auto auto;
+}
+
+.rotateoff {
+  /* position: absolute; */
+
+  transform: rotate(20deg);
+  opacity: 0;
+}
+
+.slidein-left {
+  /* position: absolute; */
+  transform: translateX(-150px);
+  opacity: 0;
+}
+
+.hero-text_anime {
+  /* position: absolute; */
+
+  padding: 4.5em 0.5em 0.5em 0.5em;
+  transform: translateX(70%);
+  opacity: 0;
+}
+
+.hero-img_anime {
+  /* position: absolute; */
+
+  transform: translateX(-90%);
+  opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .go-out {
+    order: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .slideup {
+    transform: scale(0.5) translateY(100px);
+  }
+}

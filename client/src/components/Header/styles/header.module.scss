@@ -1,0 +1,104 @@
+@import "../../../styles/global";
+
+.header {
+  width: 100%;
+  background: $glass-bg;
+  position: fixed;
+  z-index: 20;
+  transition: all 2s ease;
+}
+
+.header-con {
+  @include conStyle;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    padding: 1em;
+  }
+
+  .nav {
+    // width: 200px;
+    display: none;
+    cursor: pointer;
+    color: $main-bg;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(235, 245, 179);
+    position: absolute;
+    right: 0;
+    top: 70px;
+
+    a {
+      @include rmDefault;
+    }
+
+    .list {
+      @include rmDefault;
+      color: black;
+      padding: 1em 1.5em;
+      // background-color: rgb(171, 173, 0);
+      // border-bottom: 1px solid rgba(0, 0, 0, 0.671);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.671);
+
+      &:hover {
+        background-color: $glass-bg;
+        // color: $pri-bg;
+        // box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.671);
+      }
+      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.671);
+    }
+
+    &:hover {
+      display: block;
+    }
+    &:focus-within {
+      display: block;
+    }
+  }
+
+  button {
+    @include rmDefault;
+    &:focus-within + .nav {
+      display: block;
+    }
+    // &:hover + .nav {
+    //   display: block;
+    // }
+  }
+  .menu {
+    width: 60px;
+    height: 40px;
+    // opacity: 0.8;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $glass-bg;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header-con {
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+    .menu {
+      width: 50px;
+      height: 30px;
+    }
+    .nav {
+      top: 60px;
+      font-size: 1.2rem;
+      .list {
+        padding: 1em 1.5em;
+      }
+    }
+  }
+}

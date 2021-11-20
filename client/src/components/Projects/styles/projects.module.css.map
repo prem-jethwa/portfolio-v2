@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "projects.module.scss",
+        "../../../styles/_global.scss",
+        "../../../styles/_global-var.scss"
+    ],
+    "names": [],
+    "file": "projects.module.css"
+}
