@@ -21,8 +21,8 @@
 .hero {
   @include conStyle;
   // padding: 3em 1em 1em 1em;
-  background-color: #0028ad38;
-  color: rgb(202, 202, 78); //$sec-bg;
+  background-color: #d5dfff0d;
+  color: $pri-font-color; //$sec-bg;
   font-size: 3em;
   line-height: 1.5em;
   min-height: 700px;
@@ -39,7 +39,7 @@
       font-size: 1.2em;
     }
     p {
-      color: $pri-font-color;
+      color: $font-color;
       margin: 1.5em 1em 1em 0;
       font-size: 20px;
       line-height: 1.3em;

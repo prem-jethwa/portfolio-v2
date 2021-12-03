@@ -17,8 +17,8 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background-color: #0028ad38;
-  color: #caca4e;
+  background-color: #d5dfff0d;
+  color: #d3e4cd;
   font-size: 3em;
   line-height: 1.5em;
   min-height: 700px;
@@ -34,12 +34,12 @@
 }
 
 .hero .title span {
-  color: yellow;
+  color: #e2c2b9;
   font-size: 1.2em;
 }
 
 .hero .title p {
-  color: #e9e9e9;
+  color: #f2ddc1;
   margin: 1.5em 1em 1em 0;
   font-size: 20px;
   line-height: 1.3em;
@@ -100,7 +100,7 @@
   min-width: 350px;
   -webkit-clip-path: circle(60% at 70% 100%);
           clip-path: circle(60% at 70% 100%);
-  background-color: #3b3514;
+  background-color: #345b63;
 }
 
 .circle-2 {

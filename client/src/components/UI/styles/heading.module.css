@@ -15,7 +15,7 @@
 .dummy2 {
   position: absolute;
   height: 50px;
-  background-color: #e4e4e41c; /*#3e087b7c;*/
+  background-color: #40818e; /*#3e087b7c;*/
   bottom: 20px;
   z-index: -1;
   left: 0;
@@ -27,7 +27,7 @@
   width: 100%;
   margin: 0;
   position: relative;
-  background-color: #3b3514;
+  background-color: #345b63;
   height: 100px;
   transition: all 1s ease-in-out;
 }
@@ -37,7 +37,7 @@
   position: absolute;
   padding: 0 0 0 0.1em;
   top: -71px;
-  color: #efff00;
+  color: #e2c2b9;
   position: absolute;
   text-align: right;
   /* min-width: 40%; */

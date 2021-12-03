@@ -43,11 +43,15 @@
   input,
   textarea {
     @include rmDefault;
-    background-color: rgba(251, 255, 219, 0.719);
+    background-color: #88888848;
     width: 90%;
     padding: 0.5em;
     font-size: 1.3rem;
     border-radius: 10px;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #fbffe29a;
   }
   textarea {
     width: 100%;

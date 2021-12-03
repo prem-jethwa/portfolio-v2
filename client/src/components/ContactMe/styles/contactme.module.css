@@ -17,7 +17,7 @@
   font-size: 1.5rem;
   padding: 0.2em 1em;
   margin: 0 0.5em 0.5em 1em;
-  border: yellow 3px solid;
+  border: #e2c2b9 3px solid;
   border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
@@ -25,7 +25,7 @@
 }
 
 .main button:hover {
-  background-color: yellow;
+  background-color: #e2c2b9;
 }
 
 .main form {
@@ -58,11 +58,31 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-  background-color: rgba(251, 255, 219, 0.719);
+  background-color: #88888848;
   width: 90%;
   padding: 0.5em;
   font-size: 1.3rem;
   border-radius: 10px;
+}
+
+.field input::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
+  color: #fbffe29a;
+}
+
+.field input:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
+  color: #fbffe29a;
+}
+
+.field input::-ms-input-placeholder,
+.field textarea::-ms-input-placeholder {
+  color: #fbffe29a;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #fbffe29a;
 }
 
 .field textarea {
@@ -76,7 +96,7 @@
 .or {
   margin: 0.2em;
   font-size: 1.5rem;
-  color: yellow;
+  color: #e2c2b9;
 }
 
 .option {
@@ -88,7 +108,7 @@
 }
 
 .option a {
-  color: #dde66d;
+  color: #f2ddc1;
 }
 
 .thanks {
